@@ -17,8 +17,14 @@ import * as dotenv from "dotenv";
 import * as fs from "fs";
 import * as readline from "readline";
 
-dotenv.config();
+import path from 'path';
+dotenv.config({ path: path.resolve(__dirname, '../../../.env') });
 
+console.log("OPENAI_API_KEY:", process.env.OPENAI_API_KEY);
+console.log("CDP_API_KEY_NAME:", process.env.CDP_API_KEY_NAME);
+console.log("CDP_API_KEY_PRIVATE_KEY:", process.env.CDP_API_KEY_PRIVATE_KEY);
+
+// ...existing code...
 /**
  * Validates that required environment variables are set
  *
