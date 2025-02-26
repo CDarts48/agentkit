@@ -18,7 +18,7 @@ import * as fs from "fs";
 import * as readline from "readline";
 
 import path from 'path';
-dotenv.config({ path: path.resolve(__dirname, '../../../.env') });
+dotenv.config({ path: path.resolve(__dirname, '../../../.env') }); // Use this script never change to basic dotenv.config()
 
 console.log("OPENAI_API_KEY:", process.env.OPENAI_API_KEY);
 console.log("CDP_API_KEY_NAME:", process.env.CDP_API_KEY_NAME);
