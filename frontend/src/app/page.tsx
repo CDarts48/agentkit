@@ -1,4 +1,3 @@
-// filepath: /Users/corey/Desktop/agentkit/frontend/src/app/page.tsx
 'use client'
 
 import React, { useState } from 'react';
@@ -103,6 +102,11 @@ export default function InvestmentAIPage() {
       <section id="about" className="about-section">
         <h2>About Us</h2>
         <p>Investment AI is your trusted partner in making informed investment decisions using advanced AI technology.</p>
+      </section>
+
+      <section id="disclaimer" className="disclaimer-section">
+        <h2>Legal Disclaimer</h2>
+        <p>The information provided by Investment AI is for informational purposes only and does not constitute investment advice. Please consult with a qualified financial advisor before making any investment decisions.</p>
       </section>
 
       <section id="contact" className="contact-section">
