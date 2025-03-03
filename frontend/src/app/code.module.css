@@ -1,0 +1,129 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+}
+
+.login-button {
+  margin-left: 1.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+  margin-top: 4rem; /* Adjust for fixed navbar height */
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input {
+  width: 300px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+
+.search-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.search-button:disabled {
+  background-color: #ccc;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #007bff;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.features-section, .about-section, .contact-section {
+  padding: 2rem;
+  background-color: #fff;
+  margin-top: 2rem;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  text-align: center;
+  margin: 1rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
