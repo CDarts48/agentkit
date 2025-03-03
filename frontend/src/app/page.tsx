@@ -3,9 +3,9 @@
 
 import React, { useState } from 'react';
 import { FaChartLine, FaLaptopCode, FaLayerGroup, FaShieldAlt, FaHistory, FaInfoCircle } from 'react-icons/fa';
-import { IoSearch } from 'react-icons/io5';
 import './code.module.css'; // Corrected import statement
 import Header from './components/header/Header'; // Import the Header component
+import Hero from './components/hero/Hero'; // Import the Hero component
 
 export default function InvestmentAIPage() {
   const [query, setQuery] = useState('');
@@ -66,35 +66,14 @@ export default function InvestmentAIPage() {
   return (
     <>
       <Header /> {/* Use the Header component */}
+      <Hero 
+        query={query} 
+        setQuery={setQuery} 
+        handleSearch={handleSearch} 
+        loading={loading} 
+        results={results} 
+      /> {/* Use the Hero component */}
 
-      <section className="hero-section">
-        <div className="hero-content">
-          <h1>Investment AI</h1>
-          <p>Your AI-Powered Investment Assistant</p>
-          <div className="search-container">
-            <input
-              type="text"
-              className="search-input"
-              placeholder="Ask about investments, stocks, market trends..."
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
-            />
-            <button 
-              className="search-button" 
-              onClick={handleSearch}
-              disabled={loading}
-            >
-              {loading ? (
-                <div className="spinner"></div>
-              ) : (
-                <IoSearch size={24} color="#fff" />
-              )}
-            </button>
-          </div>
-        </div>
-      </section>
-      
       <section id="features" className="features-section">
         <h2>Features</h2>
         <div className="features-list">
